@@ -9,7 +9,7 @@ sudo apt install -y \
     linux-tools-generic
 
 # Permitir acceso a contadores de rendimiento
-sudo systcl -w kernel.perf_event_paranoid=-1
+sudo sysctl -w kernel.perf_event_paranoid=-1
 
 # Configurar perf
 sudo ln -sf \
@@ -18,4 +18,3 @@ sudo ln -sf \
 
 # Paquetes Python
 python3 -m pip install -r .devcontainer/python_libraries_requirements.txt
-    
